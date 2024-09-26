@@ -9,13 +9,12 @@ export type RootStackParamList = {
   Login: Record<string, string> | undefined;
   Home: Record<string, string> | undefined;
 };
-
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootStackNavigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Initial">
+      <Stack.Navigator initialRouteName="Login">
         <Stack.Group
           screenOptions={{
             headerShown: false,
